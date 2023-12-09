@@ -8,6 +8,7 @@ let done = document.querySelector(".xana2");
 
 let Addbtn = document.querySelector("#addProduct");
 
+spinner.style.display = "none";
 
 Addbtn.addEventListener("click", () => {
     let nameValueAdd = nameInp.value.trim();
@@ -17,6 +18,7 @@ Addbtn.addEventListener("click", () => {
     if (nameValueAdd === "" || unitPraceValueAdd === "" || unitsInStockValueAdd === "") {
         error.style.display = 'flex';
         setTimeout(() => {
+           
             error.style.display = 'none';
         }, 2000);
         return;
