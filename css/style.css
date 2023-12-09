@@ -14,14 +14,10 @@ body {
   gap: 20px;
 }
 
-input {
-  width: 20%;
-}
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 80%;
 }
 
 td, th {
@@ -36,4 +32,51 @@ tr:nth-child(even) {
 
 .id {
   width: 10%;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  background-color: rgb(19, 19, 219);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  position: relative;
+}
+
+.add {
+  border: 2px dashed #222;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #222;
+}
+
+img {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

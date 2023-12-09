@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Html</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    .xana,
+    .xana2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+        display: none;
+
+    }
+    .spinner{
+        width: 100%;
+
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <h1>Add To list</h1>
+    <table class="table2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Strock</th>
+                <th>Add</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="name" style="width: 95%;" /></td>
+                <td><input type="text" id="price" style="width: 95%;" /></td>
+                <td><input type="text" id="stock" style="width: 95%;" /></td>
+                <td><button id="addProduct">Add new product</button></td>
+            </tr>
+            <tr style="height: 50px" class="spinner">
+                <td colspan="6">
+                    <div style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 5px;
+                  width: 100%;
+                ">
+                        <span class="loader"><img src="loading.gif" alt=""></span>Loading...
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+    <div class="xana2" style="color: green;"> <img src="done.png" alt="done">Məhsullar uğurla əlavə edildi,əsas səhifəyə
+        yönləndirilir.....
+    </div>
+    <div class="xana" style="color: red;"><img src="error.png" alt="error">Məhsul əlavə etmək istəmirsizsə aşağıdakı buttona klik edin!</h1>
+    </div>
+    <a href="index.html"><button>BACK TO HOME</button></a>
+    <script src="./add.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

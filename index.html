@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Template</title>
+    <title>Cavidan </title>
 </head>
 <body>
-    <body>
+  
+<a href="add.html"><button class="add">+</button></a>
 
-
-        <input type="search"  id="search">
+        <input type="search" placeholder="Ada görə axtar..." id="search">
+        <h1>Cavidan Crud</h1>
         <table class="table">
-          <tr>
-            <th class="id">Id</th>
-            <th id="name">Name</th>
-            <th id="price">Price</th>
-            <th id="stroch">Strock</th>
-        <th></th>    
-        <th></th>    
-          </tr>
+          <thead>
+            <tr>
+              <th class="id">Id</th>
+              <th id="name">Name</th>
+              <th id="price">Price</th>
+              <th id="stroch">Strock</th>
+          <th>Edit</th>    
+          <th>Delete</th>    
+            </tr>
+            <tr style="height: 50px" class="spinner">
+              <td colspan="6" >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                  "
+                >
+                  <span class="loader"><img src="loading.gif" alt=""></span>Loading...
+                </div>
+              </td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+
+          </tbody>
         </table>
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

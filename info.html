@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info html</title>
     <style>
-        body{
+        body {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #222;
+            font-family:  sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 15px;
+            background-color: rgb(19, 19, 219);
             color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: #222;
+        }
+
+        .div {
+            border: 2px dashed black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        h2{
+            font-weight: 100;
+            font-size: 15px;
+
+        }
+        h4{
+            font-weight: 100;
+            font-size: 15px;
         }
     </style>
 </head>
+
 <body>
+    <marquee width="100%"
+    behavior="alternate"
+    bgcolor="yellow">
+        <div class="div">
+    
+        </div>
+    </marquee>
+
+
+
     <script src="info.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
+
 </html>
