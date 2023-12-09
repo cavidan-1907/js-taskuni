@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: poppins, sans-serif;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
 }
@@ -34,9 +34,15 @@ tr:nth-child(even) {
   width: 10%;
 }
 
+tr {
+  width: 100%;
+}
+
 input {
-  width: 50%;
+  width: 80%;
   padding: 10px;
+  outline: none;
+  font-weight: 600;
 }
 
 button {
@@ -48,6 +54,7 @@ button {
   width: 100%;
   background-color: rgb(19, 19, 219);
   color: white;
+  outline: none;
 }
 
 a {
@@ -60,20 +67,20 @@ body {
 }
 
 .add {
-  border: 2px dashed #222;
+  font-weight: 400;
   top: 30px;
   right: 30px;
   position: absolute;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 35px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
-  color: #222;
+  background-color: rgb(19, 19, 219);
+  color: white;
 }
 
 img {

@@ -24,8 +24,9 @@ Addbtn.addEventListener("click", () => {
         return;
     }
 
+
     error.style.display = 'none';
-    spinner.style.display = "flex";
+    spinner.style.display = "block";
     spinner.style.width="100%"
 
     axios.post("https://northwind.vercel.app/api/products", {
@@ -42,3 +43,4 @@ Addbtn.addEventListener("click", () => {
             done.style.display = "flex";
         });
 });
+console.log("Cavidan");
