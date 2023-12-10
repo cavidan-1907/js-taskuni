@@ -18,17 +18,28 @@
         display: none;
 
     }
-    .spinner{
-        width: 100%;
+
+    .spinner {
+        width: 30%;
+        height: 50px;
 
     }
-    .loader{
+
+    .loader {
         width: 100%;
     }
 
     img {
         width: 30px;
         height: 30px;
+    }
+
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
     }
 </style>
 
@@ -48,15 +59,9 @@
                 <td><input type="text" id="stock" style="width: 95%;" /></td>
                 <td><button id="addProduct">Add new product</button></td>
             </tr>
-            <tr style="height: 50px" class="spinner" colspan="6">
+            <tr class="spinner">
                 <td colspan="6">
-                    <div style="
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 5px;
-                  width: 100%;
-                ">
+                    <div class="div">
                         <span class="loader"><img src="loading.gif" alt=""></span>Loading...
                     </div>
                 </td>
@@ -69,7 +74,8 @@
     <div class="xana2" style="color: green;"> <img src="done.png" alt="done">Məhsullar uğurla əlavə edildi,əsas səhifəyə
         yönləndirilir.....
     </div>
-    <div class="xana" style="color: red;"><img src="error.png" alt="error">Məhsul əlavə etmək istəmirsizsə aşağıdakı buttona klik edərək əsas səhifəyə qayıda bilərsiz!</h1>
+    <div class="xana" style="color: red;"><img src="error.png" alt="error">Məhsul əlavə etmək istəmirsizsə aşağıdakı
+        buttona klik edərək əsas səhifəyə qayıda bilərsiz!</h1>
     </div>
     <a href="index.html"><button>BACK TO HOME</button></a>
     <script src="./add.js"></script>

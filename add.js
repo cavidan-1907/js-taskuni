@@ -26,12 +26,12 @@ Addbtn.addEventListener("click", () => {
     error.style.display="none";
     spinner.style.display="flex";
 
-
-    axios.post("https://northwind.vercel.app/api/products",{
-        name: nameValueAdd,
-        unitPrice:unitPraceValueAdd,
-        unitsInStock: unitsInStockValueAdd
-    })
+let obj1={
+    name: nameValueAdd,
+    unitPrice:unitPraceValueAdd,
+    unitsInStock: unitsInStockValueAdd
+}
+    axios.post("https://northwind.vercel.app/api/products",obj1)
 .then((res)=>{
 setTimeout(() => {
     window.location="./index.html";
@@ -40,7 +40,4 @@ spinner.style.display="none";
 done.innerHTML+=`ID Nömrəsi : ${res.data.id}`;
 done.style.display="flex"
 });
-
-
-
 });
