@@ -25,7 +25,6 @@ fetch(`https://northwind.vercel.app/api/products`)
         <td><a href="./info.html?id=${element.id}">${element.name}</a></td>
         <td>${element.unitPrice}</td>
         <td>${element.unitsInStock}</td>
-        <a href="delete.html"></a>
         <th><a href="uptade.html?id=${element.id}">  <button id="Uptade">Edit</button></a></th>  
         <td><button onclick='deleteB(${element.id})'>delete</button></td>
       </tr>
