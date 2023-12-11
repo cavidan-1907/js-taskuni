@@ -39,7 +39,7 @@ fetch(`https://northwind.vercel.app/api/products/${id}`)
       let unitsInStockValue = unitsInStock.value.trim();
 
       if (nameValue === "" || unitPraceValue === "" || unitsInStockValue === "") {
-        div.style.display = "";
+        div.style.display = "flex";
         setTimeout(() => {
           div.style.display = "none";
         }, 2000);
